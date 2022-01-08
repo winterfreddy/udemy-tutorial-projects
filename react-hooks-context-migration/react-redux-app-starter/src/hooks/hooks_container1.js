@@ -48,6 +48,8 @@ const HooksContainer1 = () => {
         <button onClick={() => handleDispatchFalse()}>Dispatch False</button>
         <button onClick={() => context.addGlobalState()}>Add Global Value</button>
         <button onClick={() => context.decGlobalState()}>Decrement Global Value</button>
+        <button onClick={() => context.dispatchContextTrue()}>Dispatch Context True</button>
+        <button onClick={() => context.dispatchContextFalse()}>Dispatch Context False</button>
 
         <br />
 
@@ -56,6 +58,8 @@ const HooksContainer1 = () => {
             { useEffectValue ? <p>{useEffectValue}</p> : <p>No value</p>}
             <br />
             { state.stateprop1 ? <p>State prop 1 is true</p> : <p>State prop 1 is false</p>}
+            <br />
+            { context.reducerGlobalState ? <p>State prop 2 is true</p> : <p>State prop 2 is false</p>}
             <br />
             <p>Local State: {stateValue}</p>
             <p>Global State: {context.valueGlobalState}</p>
