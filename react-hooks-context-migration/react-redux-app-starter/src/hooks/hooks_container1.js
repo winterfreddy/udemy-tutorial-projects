@@ -57,6 +57,8 @@ const HooksContainer1 = () => {
             <br />
             { useEffectValue ? <p>{useEffectValue}</p> : <p>No value</p>}
             <br />
+            { context.useContextSubmit ? <p>{context.useContextSubmit}</p> : <p>No user text</p>}
+            <br />
             { state.stateprop1 ? <p>State prop 1 is true</p> : <p>State prop 1 is false</p>}
             <br />
             { context.reducerGlobalState ? <p>State prop 2 is true</p> : <p>State prop 2 is false</p>}
